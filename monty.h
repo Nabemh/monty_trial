@@ -40,7 +40,8 @@ typedef struct instruction_s
 
 /* FUNCTIONS */
 
-void h_pall(stack_t **head, unsigned int counter)
-
+void f_pall(stack_t **head, unsigned int counter);
+void f_push(stacl_t **head, unsigned int counter);
+void f_pint(stack_t **head, unsigned int counter);
 
 #endif
