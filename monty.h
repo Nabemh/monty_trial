@@ -23,7 +23,7 @@ typedef struct stack_s
 } stack_t;
 
 /**
- * bus_s -variables - args, file, line content
+ * struct bus_s -variables - args, file, line content
  * @arg: value used
  * @file: pointer to monty file
  * @content: line content
@@ -67,6 +67,9 @@ void f_pint(stack_t **head, unsigned int counter);
 void f_swap(stack_t **head, unsigned int counter);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
+void f_queue(stack_t **head, unsigned int counter);
 void free_stack(stack_t *head);
+void add_node(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
 
 #endif

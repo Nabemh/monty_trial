@@ -39,7 +39,7 @@ void f_push(stack_t **head, unsigned int counter)
 	{
 		if (bus.arg[0] == '-')
 			j++;
-		for (; bus.arg[j] != '\0'; j++);
+		for (; bus.arg[j] != '\0'; j++)
 		{
 			if (bus.arg[j] > 57 || bus.arg[j] < 48)
 				flag = 1;
@@ -61,7 +61,7 @@ void f_push(stack_t **head, unsigned int counter)
 	}
 	n = atoi(bus.arg);
 	if (bus.lifi == 0)
-		addnode(head, n);
+		add_node(head, n);
 	else
 		addqueue(head, n);
 }
