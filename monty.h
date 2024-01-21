@@ -72,9 +72,15 @@ void f_pint(stack_t **head, unsigned int counter);
 void f_swap(stack_t **head, unsigned int counter);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
+void f_pop(stack_t **head, unsigned int counter);
+void f_stack(stack_t **head, unsigned int counter);
 void f_queue(stack_t **head, unsigned int counter);
 void free_stack(stack_t *head);
+ssize_t getstdin(char **lineptr, int file);
+size_t getline (char **string, size_t *n, FILE *stream);
 void add_node(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
+int execute(char *content, stack_t *stack, unsigned int counter, FILE *file);
+
 
 #endif
