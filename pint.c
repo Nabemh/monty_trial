@@ -3,7 +3,7 @@
  * f_pint - prints the top of the stack
  * @head: pointer at head of stack
  * @counter: line number
- * 
+ *
 */
 
 void f_pint(stack_t **head, unsigned int counter)

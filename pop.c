@@ -3,7 +3,7 @@
  * f_pop - deletes the top
  * @head: pointer to stack head
  * @counter: line number
- * 
+ *
 */
 void f_pop(stack_t **head, unsigned int counter)
 {

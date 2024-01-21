@@ -11,13 +11,12 @@ void f_pall(stack_t **head, unsigned int counter)
 {
 	stack_t *temp;
 	(void) counter;
-	(void) stack;
 
 	temp = *head;
 
 	if (temp == NULL)
 		return;
-	
+
 	while (temp != NULL)
 	{
 		printf("%d\n", temp->n);
@@ -40,7 +39,7 @@ void f_push(stack_t **head, unsigned int counter)
 	{
 		if (bus.arg[0] == '-')
 			j++;
-		fot (; bus.arg[j] != '\0'; j++)
+		for (; bus.arg[j] != '\0'; j++);
 		{
 			if (bus.arg[j] > 57 || bus.arg[j] < 48)
 				flag = 1;
@@ -54,11 +53,11 @@ void f_push(stack_t **head, unsigned int counter)
 			exit(EXIT_FAILURE);
 		}}
 	else
-	{ fprintf(stderr, "L%d: usage: push integer\n" counter);
+	{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
-		exit(EXIT_FAILURE); 
+		exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.arg);
 	if (bus.lifi == 0)
