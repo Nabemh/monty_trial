@@ -2,7 +2,12 @@
 #define MONTY_H
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <unistd.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdarg.h>
+#include <fcntl.h>
+#include <sys/types.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or a queue)
